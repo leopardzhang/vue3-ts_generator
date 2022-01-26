@@ -5,14 +5,13 @@
 			@keyup.enter="fnSubmit"
 			v-model="cityName"
 			type="text"
-			placeholder="请选择城市"
+			placeholder="输入城市名或者地区号"
 		/>
 		<button @click="fnSubmit">查询</button>
 		<div v-if="show">
 			<p>
-				当前搜索城市：{{ cityInfo.name }}， 当地天气状况：{{
-					weatherInfo.text
-				}}， {{ weatherInfo.windDir }}，{{ weatherInfo.temp }}℃
+				当前搜索城市：{{ cityInfo.name }}， 当地天气状况：{{ weatherInfo.text }}，
+				{{ weatherInfo.windDir }}，{{ weatherInfo.temp }}℃
 			</p>
 		</div>
 	</div>
