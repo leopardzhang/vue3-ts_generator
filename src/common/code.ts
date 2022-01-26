@@ -1,1 +1,1 @@
-export const ERR_OK: number = 0
+export const ERR_OK: number = 200
