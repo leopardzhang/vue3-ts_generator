@@ -6,10 +6,8 @@ const state = {
 	$loading: false
 }
 
-const SET_LOADING_STATE: string = 'SET_LOADING_STATE'
-
 const mutations = {
-	[SET_LOADING_STATE](state: any, mutation: any) {
+	SET_LOADING_STATE(state: any, mutation: any) {
 		state.$loading = mutation.payload
 	}
 }

@@ -14,7 +14,7 @@ export default defineComponent({
 	},
 
 	setup() {
-		const cityName = ref < string | number > ("");
+		const cityName = ref<string | number>("");
 
 		return {
 			cityName,
