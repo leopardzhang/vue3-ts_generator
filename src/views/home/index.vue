@@ -10,7 +10,7 @@
 		<button @click="fnSubmit">查询</button>
 		<div v-if="show">
 			<p>
-				当前搜索城市：{{ cityInfo.name }}， 当地天气状况：{{ weatherInfo.text }}，
+				当前搜索：{{ cityInfo.name }}， 当地天气状况：{{ weatherInfo.text }}，
 				{{ weatherInfo.windDir }}，{{ weatherInfo.temp }}℃
 			</p>
 		</div>
