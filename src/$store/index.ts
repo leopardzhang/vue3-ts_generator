@@ -1,6 +1,6 @@
 import { createStore, Store } from 'vuex'
 import { InjectionKey } from 'vue'
-import { State } from './interface'
+import { State } from '../types/interface'
 import $api from './modules/$api'
 import demo from './modules/demo'
 
