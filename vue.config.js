@@ -27,8 +27,11 @@ module.exports = {
 		port: 3000,
 		proxy: {
 			"/api": {
-				target: '<url>',
-				changeOrigin: true
+				target: "https://geoapi.qweather.com",
+				changeOrigin: true,
+				pathRewrite: {
+					'^/api': '/'
+				}
 			}
 		}
 	}

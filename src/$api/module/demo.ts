@@ -1,9 +1,9 @@
 export default {
 	WEATHER_REOPRT__GET_CITY_INFO: {
-		name: 'GET_CITY_INFO',
+		name: 'WEATHER_REOPRT__GET_CITY_INFO',
 
 		proxy: {
-			url: 'https://geoapi.qweather.com/v2/city/lookup',
+			url: 'api/v2/city/lookup',		// 这个接口被转发了地址在vue.config devserver
 			method: 'GET'
 		}
 	},
@@ -14,17 +14,6 @@ export default {
 		proxy: {
 			url: 'https://devapi.qweather.com/v7/weather/now',
 			method: 'GET'
-		}
-	},
-	TEST_POST: {
-		name: 'TEST_POST',
-
-		proxy: {
-			url: 'demo',
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			}
 		}
 	},
 
