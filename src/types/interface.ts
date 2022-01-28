@@ -2,3 +2,8 @@
 export interface State {
 	key: string
 }
+
+export interface apiResponse {
+	code: string | number
+	data: any
+}

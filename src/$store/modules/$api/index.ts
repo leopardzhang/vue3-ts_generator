@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { ERR_OK } from '@/common/code'
-import { axiosResponse } from './types'
+import { axiosResponse } from '@/types/types'
 
 const state = {
 	$loading: false

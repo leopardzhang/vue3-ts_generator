@@ -1,7 +1,7 @@
 import $apiConf from '@/$api'
-import { state } from './types'
+import { demoSate } from '@/types/types'
 
-const state: state = {
+const state: demoSate = {
 	cityInfo: {
 		name: '',
 		id: ''
@@ -44,8 +44,8 @@ const actions = {
 				location
 			}
 		}, { root: true })
-
 		const info = res.location[0]
+
 		commit({
 			type: 'SET_CITY_ID',
 			payload: {
