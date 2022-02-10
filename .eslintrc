@@ -164,6 +164,9 @@
         "react/style-prop-object": 0,
 
         // Validate JSX indentation (fixable)
-        "react/jsx-indent": [2, 4]
+        "react/jsx-indent": [2, 4],
+
+		// Require `let` or `const` instead of `var`
+		"no-var": [2, "err"]
     }
 }
