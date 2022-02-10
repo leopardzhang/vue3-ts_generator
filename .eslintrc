@@ -167,6 +167,9 @@
         "react/jsx-indent": [2, 4],
 
 		// Require `let` or `const` instead of `var`
-		"no-var": [2, "err"]
+		"no-var": 2,
+
+		// Disallow the use of `console`
+		"no-console": 2
     }
 }
