@@ -3,9 +3,26 @@
 		<router-link to="/">Home</router-link> |
 		<router-link to="/about">About</router-link>
 	</div>
+	<div class="loading" v-show="$loading">
+		<span>loading....</span>
+	</div>
 	<router-view />
 </template>
+<script>
+import { defineComponent, ref } from "vue";
+import { mapState } from "vuex";
 
+export default defineComponent({
+	computed: {
+		...mapState({
+			$loading: (state) => state.$api.$loading
+		}),
+	},
+
+	mounted() {
+	},
+});
+</script>
 <style lang="scss">
 #app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
